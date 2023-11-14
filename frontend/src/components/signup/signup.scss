@@ -1,0 +1,33 @@
+.signup{
+    width: 100%;
+    height: 100vh;
+
+    .container-signup{
+        height: 100vh;
+
+        .signup-heading{
+            font-size: 100px; 
+            color: rgba(165, 195, 240, 1);
+            opacity: 0.8;
+            font-family: monospace;
+            font-weight: 600;
+        }
+
+        .btn-signup{
+            background-color: rgba(165, 195, 240, 1);
+            color: white;
+            outline: none;
+            border: none;
+            font-weight: 500;
+            font-size: 20px;
+            font-family: inherit;
+        }
+
+        .input-signup{
+            outline: none;
+            font-family: inherit;
+        }
+    }
+
+
+}

@@ -1,0 +1,161 @@
+.card-container{
+    width: 240px; 
+    max-height: 260px;
+    min-height: 150px;
+    height: auto;
+    box-shadow: 0px 3px 5px #A5A5A5;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+
+    .card-line{
+      width: 100%;
+      height: 2%;
+      background-color: rgb(93, 147, 225);
+    }
+
+    .task_bloc{
+      width: 100%;
+      height: 98%;
+      padding: 10px 10px;
+      display : flex;
+      flex-direction: column;
+      position: relative;
+      gap: 10px;
+
+      .task_name{
+        background-color: rgb(236, 243, 252) !important;
+        height: 30px;
+        padding: 1px 1px !important;
+        text-align: center;
+        border-radius: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-weight: 500;
+        text-transform: capitalize;
+      }
+
+      .task_description{
+        overflow-y: auto;
+        word-break: break-word;
+        max-height: 120px;
+        min-height: 100px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+
+        &::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 5px grey; 
+          border-radius: 10px;
+        }
+         
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+          background-color: rgb(93, 147, 225);
+          border-radius: 10px;
+        }
+        &::-webkit-scrollbar {
+          width: 5px;            
+        }
+      
+        &::-webkit-scrollbar-track {
+          background: white;       
+        }
+        
+        &::-webkit-scrollbar-thumb {
+          background-color: rgb(93, 147, 225);
+          border-radius: 10px;
+        }
+      
+        &::-webkit-scrollbar {
+          width: 5px;
+        }
+      }
+
+      .container-icon{
+        position: absolute;
+        right: 5px;
+        bottom: 4px;
+
+        .icon-check{
+          margin-right: 8px;
+          cursor: pointer;
+          color: #1bdf1b;
+        }
+
+        .icon-progress{
+          margin-right: 8px;
+          cursor: pointer;
+          color: #c0c6c0;
+        }
+    
+        .icon-edit{
+          cursor: pointer;
+          margin-right: 5px;
+          color: rgb(93, 147, 225);
+        }
+      
+        .icon-delete{
+          cursor: pointer;
+          color: #F48687;
+          margin-right: 8px;
+        }
+    
+      }
+
+      .progress-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0px !important;
+        margin-bottom: 8px;
+
+        .progressBar{
+          width: 95%;
+          height: 15px;
+          background-color: #ebe4e4;
+          border-radius: 10px;
+          margin-bottom: 5px;
+          align-items: center;
+          display: flex;
+
+          .progress-color{
+            height: 100%;
+            border-radius: 10px;
+            transition: width 0.5s ease-out;
+            display: flex;
+            align-items: center;
+
+            .progress-label{
+              font-size: 12px;
+              font-weight: 600;
+              margin-left: 10px;
+            }
+          }
+        }
+        .bloc-button{
+          display: flex;
+          flex-direction: row;
+          gap: 3px;
+          margin-top: 3px;
+          button{
+            background: rgb(236 243 252);
+            color: black;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 12px;
+            /* height: 26px; */
+            text-align: center;
+            padding: 5px;
+            outline: 0;
+            font-weight: 400;
+          }
+        }
+
+      }
+
+    }
+
+
+  }
